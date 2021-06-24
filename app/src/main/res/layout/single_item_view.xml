@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_exchange_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tv_exchange_id"
+        app:layout_constraintStart_toStartOf="@+id/tv_exchange_id"
+        app:layout_constraintTop_toBottomOf="@+id/tv_exchange_id" />
+
+    <TextView
+        android:id="@+id/tv_price_unconverted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tv_symbol"
+        app:layout_constraintStart_toStartOf="@+id/tv_symbol"
+        app:layout_constraintTop_toBottomOf="@+id/tv_symbol" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tv_price_unconverted"
+        app:layout_constraintStart_toStartOf="@+id/tv_price_unconverted"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_unconverted" />
+
+    <TextView
+        android:id="@+id/tv_change_24h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tv_price"
+        app:layout_constraintStart_toStartOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_spread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tv_change_24h"
+        app:layout_constraintStart_toStartOf="@+id/tv_change_24h"
+        app:layout_constraintTop_toBottomOf="@+id/tv_change_24h" />
+
+    <TextView
+        android:id="@+id/tv_volume_24h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tv_spread"
+        app:layout_constraintStart_toStartOf="@+id/tv_spread"
+        app:layout_constraintTop_toBottomOf="@+id/tv_spread" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tv_volume_24h"
+        app:layout_constraintStart_toStartOf="@+id/tv_volume_24h"
+        app:layout_constraintTop_toBottomOf="@+id/tv_volume_24h" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_status"
+        app:layout_constraintStart_toStartOf="@+id/tv_status"
+        app:layout_constraintTop_toBottomOf="@+id/tv_status" />
+</androidx.constraintlayout.widget.ConstraintLayout>
